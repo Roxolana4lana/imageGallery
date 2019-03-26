@@ -1,0 +1,74 @@
+@import 'responsive';
+@import 'artists';
+@import 'navigation';
+@import 'contact';
+
+$myFont: 'Abril Fatface', cursive;
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+.wrapper{
+  
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(200px, auto);
+  position: relative;
+  width: 100vw;
+ 
+
+}
+.logo{
+    color:white;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    font-family:$myFont;
+    margin:2rem auto;
+    font-size: 3rem;
+  
+}
+.box{
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.lulu{
+    width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top:0;
+            left:0;
+    border-bottom: 3px solid red;
+    transition: 5s ease;
+    z-index:10;
+  
+}
+
+.Home{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    .section{
+        width:50%;
+        text-align: center;
+         padding-top:45vh;
+       
+       h2, h1{
+           
+              font-size: 2rem;
+       }
+        .left{
+            background-color: white;
+        }
+        &.right{
+             background-color: black;
+             color: white;
+        }
+    }
+}
+  

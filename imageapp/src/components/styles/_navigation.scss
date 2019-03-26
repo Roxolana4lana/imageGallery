@@ -1,0 +1,82 @@
+@import 'responsive';
+@mixin navigation
+{
+   
+    position: fixed;
+z-index: 5;
+    height: 100vh;
+   // background-color: black;
+    //left: 43vw;
+  
+    width: 0.2rem;
+    //top:40vh;
+     -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+    animation-name:example;
+    animation-duration:5s;
+   animation-fill-mode: forwards;
+     animation-delay: 2s;
+        ul{
+         a{
+ text-decoration: none;
+ 
+  color: white;
+        }
+       
+         &:hover{
+        font-size: 2rem;
+       
+    }
+li{
+    
+   
+    list-style-type: none;
+    margin-left:0.1rem;
+    color: white;
+    padding-bottom: 2rem;
+    position: relative;
+    &:after{
+       content:'';
+       width:0%;
+       height:0.2rem;
+       position: absolute;
+       background:white;
+       margin-bottom: 1.5rem;  
+
+bottom:0%;
+left: 50%;
+border-radius: 10px;
+transition: all 400ms ease;
+    }
+   
+     &:hover::after{
+        // padding-bottom:2rem;
+        // color: $fontMain;
+      left:0%;
+      width:100%;
+    }
+   
+}
+    }
+}
+@keyframes example{
+    from{width:0.1rem;}
+    to{width:10rem;}
+}
+@keyframes another{
+    from{width:0.1rem;}
+    to{width:10rem;}
+}
+.Navigation{
+    @include navigation();
+     background-color: black;
+     right: 2rem;
+       padding-top:7vh;
+}
+.NavigationMain{
+     @include navigation();
+     background-color: black;
+     @include breakpoint(s){ left:8rem; padding-top:1vh;}
+      @include breakpoint(m){ left:23rem; padding-top:6vh;}
+      @include breakpoint(l){  left:61rem;  padding-top:7vh;}
+}

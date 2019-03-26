@@ -1,0 +1,55 @@
+.Contact{
+    background-color: black;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    font-family: 'Allerta Stencil', sans-serif;
+  
+}
+.contactInfo{
+ 
+   margin:10rem 10rem;
+   p{
+       font-size: 2rem;
+   }
+   h1, h2{
+       font-size: 2rem;
+   }
+}
+
+.contactMap{
+ 
+  margin: 10rem -15rem;
+  height: 50rem;
+  width:60rem;
+   border: 2px solid white;
+}
+.contact_container_top{
+       margin:0 -4rem;
+    background-color: white;
+    width: 60rem;
+}
+.contact_container_medium{
+    margin:3rem 10rem;
+    background-color: white;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+    width:35rem;
+    height:15rem;
+    padding:2rem 0 0 2rem;
+
+}
+.contact_container_bottom{
+    margin:10rem;
+    color: white;
+}
+.contact_icons{
+    margin: 5rem 0;
+    i{
+ font-size: 3rem;
+ margin: 0 2rem;
+ color: white;
+    }
+   
+}
