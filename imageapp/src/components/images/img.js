@@ -25,10 +25,11 @@ import pi25 from './pi25-min.jpg'
         'id':1, 
         'style':{
             gridColumn:'1/3',
-           gridRow:'1/3',
+            gridRow:'1/3',
             background: `url(${pi1})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
+           
         }
     },
     {
