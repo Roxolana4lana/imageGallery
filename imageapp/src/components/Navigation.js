@@ -25,7 +25,7 @@ export default class Navigation extends Component {
         <ul>
                 <li><Link to='/' style={{ fontSize: '3rem' }}>home</Link></li>
                 <li><Link to='gallery' style={{ fontSize: '2.7rem' }}>gallery</Link></li>
-                    <li><Link to='/artists' style={{ fontSize: '2.4rem' }}>artists</Link></li>
+                   
                         <li><Link to='contact' style={{ fontSize: '1.8rem' }}>contact</Link></li>
         </ul>
         <h1 className='logo'>Modern art</h1>
