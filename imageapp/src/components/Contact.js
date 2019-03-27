@@ -45,11 +45,8 @@ export default class Contact extends Component {
                 <MapWithAMarker
                     containerElement={<div className='contactMap' />}
                     mapElement={<div style={{ height: `100%`, width: '100%' }} />}
-                />
-                
-            
-      </div>
-           
+                />   
+      </div>    
         </div >
     )
   }
