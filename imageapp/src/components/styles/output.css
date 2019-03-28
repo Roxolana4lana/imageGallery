@@ -1,5 +1,5 @@
 .Artists {
-  background-color: black; }
+  background-color: white; }
 
 .artSection {
   display: flex; }
@@ -13,88 +13,24 @@
     .artSection {
       flex-direction: row; } }
 
-.artDesctiptionSecond {
-  align-self: center;
-  width: 60rem;
-  height: 40rem;
-  margin-left: 3rem;
-  padding: 3rem 13rem 1rem 6rem;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(10% 0%, 100% 0%, 70% 90%, 5% 80%);
-  -webkit-animation-name: circle;
-  -webkit-animation-duration: 5s;
-  animation-name: circle;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s; }
-  .artDesctiptionSecond p {
-    font-size: 1.5rem; }
-  .artDesctiptionSecond h1 {
-    text-align: right;
-    font-size: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1.5rem; }
-
-.artDesctiptionThird {
-  align-self: center;
-  width: 60rem;
-  height: 40rem;
-  margin-left: 3rem;
-  padding: 3rem 17rem 1rem 3rem;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 70% 0%, 90% 90%, 5% 100%);
-  -webkit-animation-name: circle;
-  -webkit-animation-duration: 5s;
-  animation-name: circle;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s; }
-  .artDesctiptionThird p {
-    font-size: 1.5rem; }
-  .artDesctiptionThird h1 {
-    text-align: right;
-    font-size: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1.5rem; }
-
-.artDesctiptionForth {
-  align-self: center;
-  width: 60rem;
-  height: 40rem;
-  margin-left: 3rem;
-  padding: 2rem 20rem 1rem 10rem;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(10% 0%, 60% 0%, 90% 90%, 5% 110%);
-  -webkit-animation-name: circle;
-  -webkit-animation-duration: 5s;
-  animation-name: circle;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s; }
-  .artDesctiptionForth p {
-    font-size: 1.5rem; }
-  .artDesctiptionForth h1 {
-    text-align: right;
-    font-size: 2rem;
-    margin-right: 1rem;
-    margin-bottom: 1.5rem; }
-
+.artDesctiptionSecond,
+.artDesctiptionThird,
+.artDesctiptionForth,
 .artDesctiption {
   align-self: center;
   width: 60rem;
   height: 40rem;
   margin-left: 3rem;
-  padding: 3rem 13rem 1rem 3rem;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 90% 0%, 75% 90%, 5% 100%);
-  -webkit-animation-name: circle;
-  -webkit-animation-duration: 5s;
-  animation-name: circle;
-  animation-duration: 10s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s; }
+  padding: 3rem 13rem 1rem 6rem;
+  color: black; }
+  .artDesctiptionSecond p,
+  .artDesctiptionThird p,
+  .artDesctiptionForth p,
   .artDesctiption p {
     font-size: 1.5rem; }
+  .artDesctiptionSecond h1,
+  .artDesctiptionThird h1,
+  .artDesctiptionForth h1,
   .artDesctiption h1 {
     text-align: right;
     font-size: 2rem;
@@ -226,50 +162,106 @@
       left: 61rem;
       padding-top: 7vh; } }
 
-.Contact {
+.constactMain {
   background-color: black;
-  height: 100vh;
+  width: 100vw;
+  padding-bottom: 10rem; }
+  @media (min-width: 312px) {
+    .constactMain {
+      height: 100%; } }
+  @media (min-width: 696px) {
+    .constactMain {
+      height: 100%; } }
+  @media (min-width: 1180px) {
+    .constactMain {
+      height: 100vh; } }
+
+.Contact {
   display: flex;
-  flex-direction: row;
   font-family: 'Allerta Stencil', sans-serif; }
+  @media (min-width: 312px) {
+    .Contact {
+      flex-direction: column; } }
+  @media (min-width: 696px) {
+    .Contact {
+      flex-direction: row; } }
+  @media (min-width: 1180px) {
+    .Contact {
+      flex-direction: row; } }
 
 .contactInfo {
-  margin: 10rem 10rem; }
+  margin: 10rem 10rem 0 10rem; }
   .contactInfo p {
     font-size: 2rem; }
   .contactInfo h1, .contactInfo h2 {
     font-size: 2rem; }
 
 .contactMap {
-  margin: 10rem -15rem;
   height: 50rem;
-  width: 60rem;
   border: 2px solid white; }
+  @media (min-width: 312px) {
+    .contactMap {
+      width: 30rem;
+      margin: 1rem 2rem; } }
+  @media (min-width: 696px) {
+    .contactMap {
+      width: 45rem;
+      margin: 10rem 0rem; } }
+  @media (min-width: 1180px) {
+    .contactMap {
+      width: 60rem;
+      margin: 10rem -3rem; } }
 
 .contact_container_top {
-  margin: 0 -4rem;
-  background-color: white;
-  width: 60rem; }
+  background-color: white; }
+  @media (min-width: 312px) {
+    .contact_container_top {
+      width: 30rem;
+      margin: 0 -8rem; } }
+  @media (min-width: 696px) {
+    .contact_container_top {
+      width: 30rem;
+      margin: 0 -7rem; } }
+  @media (min-width: 1180px) {
+    .contact_container_top {
+      width: 60rem;
+      margin: 0 -4rem; } }
 
 .contact_container_medium {
-  margin: 3rem 10rem;
   background-color: white;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
-  width: 35rem;
   height: 15rem;
   padding: 2rem 0 0 2rem; }
+  @media (min-width: 312px) {
+    .contact_container_medium {
+      width: 30rem;
+      margin: 3rem -8rem; } }
+  @media (min-width: 696px) {
+    .contact_container_medium {
+      width: 30rem;
+      margin: 3rem -5rem; } }
+  @media (min-width: 1180px) {
+    .contact_container_medium {
+      width: 35rem;
+      margin: 3rem 10rem; } }
 
 .contact_container_bottom {
-  margin: 10rem;
   color: white; }
+  @media (min-width: 312px) {
+    .contact_container_bottom {
+      margin: 0 -7rem; } }
+  @media (min-width: 696px) {
+    .contact_container_bottom {
+      margin: 0 -5rem; } }
+  @media (min-width: 1180px) {
+    .contact_container_bottom {
+      margin: 0 -5rem; } }
 
-.contact_icons {
-  margin: 5rem 0; }
-  .contact_icons i {
-    font-size: 3rem;
-    margin: 0 2rem;
-    color: white; }
+.contact_icons i {
+  font-size: 3rem;
+  margin: 5rem 1rem;
+  color: white; }
 
 * {
   box-sizing: border-box;
